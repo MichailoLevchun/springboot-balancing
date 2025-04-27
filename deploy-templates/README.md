@@ -21,7 +21,7 @@ A Helm chart for Kubernetes
 | Key | Type | Default | Description |
 |-----|------|---------|-------------|
 | affinity | object | `{}` | https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/#affinity-and-anti-affinity |
-| autoscaling.enabled | bool | `false` |  |
+| autoscaling.enabled | bool | `true` |  |
 | autoscaling.maxReplicas | int | `100` |  |
 | autoscaling.minReplicas | int | `1` |  |
 | autoscaling.targetCPUUtilizationPercentage | int | `80` |  |
@@ -46,7 +46,7 @@ A Helm chart for Kubernetes
 | podSecurityContext | object | `{}` |  |
 | readinessProbe.initialDelaySeconds | int | `20` |  |
 | readinessProbe.tcpSocket.port | string | `"http"` |  |
-| replicaCount | int | `1` |  |
+| replicaCount | int | `0` |  |
 | resources | object | `{}` |  |
 | securityContext | object | `{}` |  |
 | service.port | int | `8080` |  |
